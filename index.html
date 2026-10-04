@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ivocontador // Estudio Contable — Lic. Luciano Ivo Racciatti</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Estudio Contable y Asesoramiento Fiscal Estratégico. Lic. Luciano Ivo Racciatti, Contador Público matriculado en CPCE CABA y CPCE PBA. Monotributo, Responsables Inscriptos, Sociedades y Exportación de Servicios." />
+  <meta property="og:title" content="ivocontador // Estudio Contable — Lic. Luciano Ivo Racciatti" />
+  <meta property="og:description" content="Arquitectura contable y fiscal para quienes operan con criterio. CPCE CABA y CPCE PBA." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.instagram.com/ivocontador/" />
+  
+  <!-- Resource Hints & DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Critical Above-The-Fold Preloads -->
+  <link rel="preload" as="image" href="assets/logo.png" type="image/png" />
+  <link rel="preload" as="style" href="styles.css" />
+
+  <!-- Google Fonts: Geist Mono & Inter (Pruned unused fonts for maximum performance) -->
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Custom Stylesheet (Old Tom Capital Aesthetic) -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom Orange Square Cursor -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       TOP NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar-main" id="navbarMain">
+    <div class="container-firm">
+      <div class="navbar-inner">
+        
+        <!-- Brand Lockup -->
+        <a href="#hero" class="brand-lockup" aria-label="Inicio">
+          <img src="assets/logo.png" alt="Logo Ivo Contador" class="brand-logo-img" decoding="async" />
+          <div class="brand-text">
+            <span class="brand-title">ivocontador</span>
+            <span class="brand-subtitle">ESTUDIO CONTABLE &amp; ASESORÍA FISCAL</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="#about" class="nav-item">El Estudio</a>
+          <a href="#practices" class="nav-item">Prácticas</a>
+          <a href="#calendar" class="nav-item">Calendario Fiscal</a>
+          <a href="#diagnostic" class="nav-item">Consultar</a>
+          <a href="#location" class="nav-item">Ubicación</a>
+          <a href="#contact" class="nav-item">Contacto</a>
+        </nav>
+
+        <!-- Right Side Actions -->
+        <div class="nav-right-actions">
+          <a href="#contact" class="btn btn-pop" style="padding: 0.55rem 1rem; font-size: 0.72rem;">
+            <span>Consultar</span>
+          </a>
+          <!-- Mobile Menu Trigger -->
+          <button class="burger-btn" id="burgerBtn" aria-label="Abrir Menú">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE DRAWER MENU
+       ========================================================================== -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-lockup">
+        <img src="assets/logo.png" alt="Logo Ivo Contador" class="brand-logo-img" style="height: 28px;" decoding="async" />
+        <div class="brand-text">
+          <span class="brand-title">ivocontador</span>
+          <span class="brand-subtitle">ESTUDIO CONTABLE &amp; ASESORÍA FISCAL</span>
+        </div>
+      </div>
+      <button id="closeDrawerBtn" class="btn" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">Cerrar ✕</button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="#about" class="mobile-nav-item"><span>El Estudio</span> <span class="mono" style="font-size: 0.9rem; color: var(--sand--demoted);">01</span></a>
+      <a href="#practices" class="mobile-nav-item"><span>Prácticas & Servicios</span> <span class="mono" style="font-size: 0.9rem; color: var(--sand--demoted);">02</span></a>
+      <a href="#calendar" class="mobile-nav-item"><span>Calendario Fiscal</span> <span class="mono" style="font-size: 0.9rem; color: var(--sand--demoted);">03</span></a>
+      <a href="#diagnostic" class="mobile-nav-item"><span>Simulador Fiscal</span> <span class="mono" style="font-size: 0.9rem; color: var(--sand--demoted);">04</span></a>
+      <a href="#location" class="mobile-nav-item"><span>Ubicación</span> <span class="mono" style="font-size: 0.9rem; color: var(--sand--demoted);">05</span></a>
+      <a href="#contact" class="mobile-nav-item"><span>Contacto Directo</span> <span class="mono" style="font-size: 0.9rem; color: var(--sand--demoted);">06</span></a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">CPCE CABA · CPCE PBA</span>
+      <a href="https://www.instagram.com/ivocontador/" target="_blank" rel="noopener" class="mono" style="font-size: 0.7rem; color: var(--sand--pop);">@ivocontador ↗</a>
+    </div>
+  </div>
+
+  <main class="page-wrapper">
+
+    <!-- ==========================================================================
+         HERO SECTION (OLD TOM CAPITAL FIRM HERO STYLE)
+         ========================================================================== -->
+    <!-- ==========================================================================
+         INDEX COVER SECTION (FULL-WIDTH BRAND COVER WITH PARALLAX CURTAIN)
+         ========================================================================== -->
+    <section class="index-cover-section" id="hero" aria-label="Portada Oficial IVOCONTADOR">
+      <div class="hero-universe-lines" aria-hidden="true">
+        <div class="universe-col-line"></div>
+        <div class="universe-col-line"></div>
+        <div class="universe-col-line"></div>
+        <div class="universe-col-line"></div>
+        <div class="universe-col-line"></div>
+        <div class="universe-col-line"></div>
+        <div class="universe-col-line"></div>
+        <div class="universe-col-line"></div>
+        <div class="universe-col-line"></div>
+        <div class="universe-col-line"></div>
+        <div class="universe-col-line"></div>
+        <div class="universe-col-line" style="border-right: none;"></div>
+      </div>
+
+      <div class="index-cover-inner">
+        <!-- Monumental Full-Width Brand Stage -->
+        <div class="index-brand-stage">
+          <div class="index-brand-lockup">
+            <img src="assets/logo.png" alt="Logo IVOCONTADOR" class="index-brand-logo" fetchpriority="high" decoding="async" />
+            <div class="index-brand-text">
+              <h1 class="index-brand-title">IVOCONTADOR</h1>
+              <p class="index-brand-subtitle">ESTUDIO CONTABLE &amp; ASESORÍA FISCAL</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cover Bottom Bar (Centered Animated Scroll Indicator) -->
+        <div class="index-cover-bottom">
+          <div class="index-scroll-cue" id="indexScrollCue" role="button" tabindex="0" aria-label="Desliza para abajo">
+            <span class="index-scroll-label">desliza para abajo</span>
+            <div class="scroll-arrow-track" aria-hidden="true">
+              <svg class="scroll-arrow-svg" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 2V18M8 18L3 13M8 18L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Flow (Curtain that slides over the cover) -->
+    <div class="main-content-flow">
+
+      <!-- ==========================================================================
+           FIRM OVERVIEW / VALUE PROPOSITION SECTION
+           ========================================================================== -->
+      <section class="firm-overview-section" id="overview">
+        <div class="container-firm">
+          <div class="hero-grid">
+            
+            <div class="hero-left">
+              <span class="kicker">Propuesta de Valor &middot; Arquitectura Contable</span>
+              <h2 class="display-title">
+                Asesoramos a emprendedores, profesionales independientes y PyMEs en Argentina.
+              </h2>
+            <p class="editorial-p" style="max-width: 680px;">
+              Planificación fiscal preventiva, encuadre normativo ante ARCA y optimización integral de tu estructura contable.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+              <a href="#diagnostic" class="btn btn-pop">
+                <span>Consultar mi Situación</span>
+                <span class="btn-icon-arrow">
+                  <svg viewBox="0 0 11 9" fill="none"><path d="M10.37 4.51L5.86 9L5.07 8.19L8.21 5.09H0V3.91H8.21L5.07 0.79L5.86 0L10.37 4.51Z" fill="currentColor"/></svg>
+                </span>
+              </a>
+              <a href="https://www.instagram.com/ivocontador/" target="_blank" rel="noopener" class="btn">
+                <span>Ver Instagram @ivocontador</span>
+                <span class="btn-icon-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-right-meta">
+            <div class="meta-block">
+              <span class="meta-label">Titular del Estudio</span>
+              <span class="meta-value">Lic. Luciano Ivo Racciatti</span>
+            </div>
+            <div class="meta-block">
+              <span class="meta-label">Matrículas Profesionales</span>
+              <span class="meta-value">CPCE CABA &middot; CPCE PBA</span>
+            </div>
+            <div class="meta-block">
+              <span class="meta-label">Organismo Fiscalizador</span>
+              <span class="meta-value">ARCA (Ex AFIP) &middot; AGIP &middot; ARBA</span>
+            </div>
+            <div class="meta-block">
+              <span class="meta-label">Enfoque de Trabajo</span>
+              <span class="meta-value">Atención directa &middot; Respuesta &lt; 24hs</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4 Metrics Row -->
+        <div class="hero-sub-row">
+          <div class="metric-card">
+            <span class="metric-number">100%</span>
+            <span class="metric-label">Atención Personalizada Sin Intermediarios</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">24h</span>
+            <span class="metric-label">Tiempo Promedio de Respuesta ante Dudas</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">CABA & PBA</span>
+            <span class="metric-label">Matriculación Oficial en Ambos Consejos</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">0 Multas</span>
+            <span class="metric-label">Monitoreo Preventivo de Vencimientos</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         STATEMENT SECTION (THE SIGNATURE OTC SPINNING STAR WHEEL)
+         ========================================================================== -->
+    <section class="statement-section">
+      <div class="container-firm">
+        <div class="statement-inner">
+          
+          <h2 class="statement-text-1">
+            Asesoramos con convicción de criterio en un ecosistema tributario volátil y en constante transformación.
+          </h2>
+
+          <p class="statement-text-2">
+            Suficientemente ágil para un trato cercano, directo y sin burocracia. Riguroso y estratégico para blindar tu negocio y hacer crecer tu patrimonio con tranquilidad.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT THE FIRM SECTION (SPLIT ASYMMETRIC GRID)
+         ========================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container-firm">
+        <div class="about-split-grid">
+          
+          <div class="about-sticky-col">
+            <div>
+              <span class="kicker">Sobre la Firma</span>
+              <h2 class="section-title" style="margin-top: 0.8rem;">
+                Pensar como socios estratégicos, ejecutar con disciplina técnica.
+              </h2>
+            </div>
+            
+            <div class="about-image-card">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Arquitectura y disciplina profesional" loading="lazy" decoding="async" />
+              <div class="about-badge-overlay">
+                <span>IVOCONTADOR &middot; BUENOS AIRES</span>
+              </div>
+            </div>
+
+            <!-- Regulatory Credentials Table -->
+            <div class="about-credentials-table">
+              <div class="cred-row">
+                <span class="cred-label">Profesional</span>
+                <span class="cred-val">Luciano Ivo Racciatti</span>
+              </div>
+              <div class="cred-row">
+                <span class="cred-label">Título</span>
+                <span class="cred-val">Contador Público Nacional</span>
+              </div>
+              <div class="cred-row">
+                <span class="cred-label">Consejo CABA</span>
+                <span class="cred-val">CPCE Ciudad Autónoma de Buenos Aires</span>
+              </div>
+              <div class="cred-row">
+                <span class="cred-label">Consejo PBA</span>
+                <span class="cred-val">CPCE Provincia de Buenos Aires</span>
+              </div>
+              <div class="cred-row">
+                <span class="cred-label">Jurisdicciones</span>
+                <span class="cred-val">Nacional, CABA, Buenos Aires & Convenio Multilateral</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-editorial-col">
+            <p class="editorial-p">
+              El <strong>Estudio ivocontador</strong> fue concebido para romper con el modelo del contador tradicional que solo aparece a fin de mes para enviar un volante de pago.
+            </p>
+            <p class="editorial-p">
+              En Argentina, el costo de la desinformación fiscal es asfixiante: recategorizaciones indebidas, retenciones bancarias desmedidas (SIRCREB/SIRTAC), exclusiones del Monotributo y multas automáticas de ARCA que podrían haberse evitado con una simple planificación previa.
+            </p>
+            <p class="editorial-p">
+              Trabajamos con una metodología basada en la <strong>anticipación</strong>. Analizamos tus ingresos, tus gastos y tus metas para estructurar una estrategia contable sólida, ya sea que trabajes en relación de dependencia y quieras facturar por tu cuenta, dirijas una PyME en expansión o cobres honorarios desde el exterior.
+            </p>
+            <p class="editorial-p">
+              Nuestra promesa es innegociable: <strong>claridad absoluta</strong>. Sin tecnicismos vacíos ni rodeos. Te explicamos exactamente qué estás pagando, por qué lo pagás y cómo optimizar legalmente cada peso de tu actividad.
+            </p>
+            
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PRACTICE AREAS / SERVICES (OTC PORTFOLIO STYLE)
+         ========================================================================== -->
+    <section class="practices-section" id="practices">
+      <div class="container-firm">
+        
+        <div class="practices-header">
+          <div>
+            <span class="kicker">Áreas de Práctica</span>
+            <h2 class="section-title" style="margin-top: 0.6rem;">Servicios Especializados</h2>
+          </div>
+          <span class="tag-badge is-live">Disponibilidad Activa</span>
+        </div>
+
+        <div class="practices-grid">
+          
+          <!-- Practice 1: Monotributo -->
+          <div class="practice-card">
+            <div class="practice-top">
+              <div class="practice-index">
+                <span>[ 01 // RÉGIMEN SIMPLIFICADO ]</span>
+                <span class="practice-dot"></span>
+              </div>
+              <h3 class="practice-title">Monotributo & Pequeños Contribuyentes</h3>
+              <div class="practice-details">
+                <p class="practice-desc">
+                  Alta y categorización estratégica ante ARCA. Monitoreo permanente de topes de facturación, acreditaciones bancarias y gastos con tarjeta para evitar exclusiones de oficio. Gestión de recategorizaciones semestrales y facturación electrónica.
+                </p>
+                <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Monotributo" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
+                  <span>Consultar este servicio →</span>
+                </a>
+              </div>
+            </div>
+            <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
+              <span class="toggle-label">Saber más</span>
+              <span class="practice-arrow">↓</span>
+            </button>
+          </div>
+
+          <!-- Practice 2: Empleo formal + Independiente -->
+          <div class="practice-card">
+            <div class="practice-top">
+              <div class="practice-index">
+                <span>[ 02 // COMPATIBILIDAD DUAL ]</span>
+                <span class="practice-dot"></span>
+              </div>
+              <h3 class="practice-title">Relación de Dependencia + Monotributo</h3>
+              <div class="practice-details">
+                <p class="practice-desc">
+                  Estar en relación de dependencia no te impide tener tu propio emprendimiento. Al tener tus aportes jubilatorios y obra social cubiertos por tu empleo formal, en el Monotributo pagás únicamente el componente impositivo, reduciendo tu costo al mínimo.
+                </p>
+                <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Relaci%C3%B3n%20de%20Dependencia%20y%20Monotributo" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
+                  <span>Consultar este servicio →</span>
+                </a>
+              </div>
+            </div>
+            <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
+              <span class="toggle-label">Saber más</span>
+              <span class="practice-arrow">↓</span>
+            </button>
+          </div>
+
+          <!-- Practice 3: Responsables Inscriptos -->
+          <div class="practice-card">
+            <div class="practice-top">
+              <div class="practice-index">
+                <span>[ 03 // RÉGIMEN GENERAL ]</span>
+                <span class="practice-dot"></span>
+              </div>
+              <h3 class="practice-title">Responsables Inscriptos & Ganancias</h3>
+              <div class="practice-details">
+                <p class="practice-desc">
+                  Liquidación mensual de IVA, libros de IVA Digital, retenciones y percepciones. Confección de declaraciones juradas anuales de Impuesto a las Ganancias y Bienes Personales. Planificación del cómputo de créditos fiscales y deducciones.
+                </p>
+                <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Responsables%20Inscriptos%20y%20Ganancias" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
+                  <span>Consultar este servicio →</span>
+                </a>
+              </div>
+            </div>
+            <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
+              <span class="toggle-label">Saber más</span>
+              <span class="practice-arrow">↓</span>
+            </button>
+          </div>
+
+          <!-- Practice 4: Sociedades y PyMEs -->
+          <div class="practice-card">
+            <div class="practice-top">
+              <div class="practice-index">
+                <span>[ 04 // GOBIERNO CORPORATIVO ]</span>
+                <span class="practice-dot"></span>
+              </div>
+              <h3 class="practice-title">Sociedades Comerciales & PyMEs</h3>
+              <div class="practice-details">
+                <p class="practice-desc">
+                  Constitución y asesoramiento para SAS, SRL y SA. Confección de Estados Contables anuales, auditoría y certificación ante CPCE CABA y CPCE PBA para bancos y licitaciones. Ajuste por Inflación Impositivo y rúbrica de libros digitales.
+                </p>
+                <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Sociedades%20y%20PyMEs" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
+                  <span>Consultar este servicio →</span>
+                </a>
+              </div>
+            </div>
+            <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
+              <span class="toggle-label">Saber más</span>
+              <span class="practice-arrow">↓</span>
+            </button>
+          </div>
+
+          <!-- Practice 5: IIBB y Convenio Multilateral -->
+          <div class="practice-card">
+            <div class="practice-top">
+              <div class="practice-index">
+                <span>[ 05 // FISCALIDAD PROVINCIAL ]</span>
+                <span class="practice-dot"></span>
+              </div>
+              <h3 class="practice-title">Ingresos Brutos & Convenio Multilateral</h3>
+              <div class="practice-details">
+                <p class="practice-desc">
+                  Gestión mensual de declaraciones juradas en ARBA (PBA), AGIP (CABA) y SIFERE (Convenio Multilateral). Análisis de coeficientes unificados, atenuación de alícuotas y recuperación de saldos a favor por retenciones bancarias (SIRCREB/SIRTAC).
+                </p>
+                <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Ingresos%20Brutos%20y%20Convenio%20Multilateral" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
+                  <span>Consultar este servicio →</span>
+                </a>
+              </div>
+            </div>
+            <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
+              <span class="toggle-label">Saber más</span>
+              <span class="practice-arrow">↓</span>
+            </button>
+          </div>
+
+          <!-- Practice 6: Freelancers & Servicios al Exterior -->
+          <div class="practice-card">
+            <div class="practice-top">
+              <div class="practice-index">
+                <span>[ 06 // ECONOMÍA DEL CONOCIMIENTO ]</span>
+                <span class="practice-dot"></span>
+              </div>
+              <h3 class="practice-title">Freelancers Tech & Cobros en USD</h3>
+              <div class="practice-details">
+                <p class="practice-desc">
+                  Encuadre fiscal para exportadores de servicios (software, diseño, marketing, consultoría). Emisión de Factura E de exportación, régimen de disponibilidad de divisas del BCRA, y compatibilidad con cuentas o estructuras internacionales (LLC).
+                </p>
+                <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Exportaci%C3%B3n%20de%20Servicios%20y%20USD" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
+                  <span>Consultar este servicio →</span>
+                </a>
+              </div>
+            </div>
+            <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
+              <span class="toggle-label">Saber más</span>
+              <span class="practice-arrow">↓</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FISCAL CALENDAR TICKER (ARGENTINA 2026 / ARCA)
+         ========================================================================== -->
+    <section class="calendar-section" id="calendar">
+      <div class="container-firm">
+        
+        <div class="calendar-header">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <span class="kicker">Calendario Impositivo Oficial</span>
+              <h2 class="section-title" style="margin-top: 0.5rem;">Cronograma de Vencimientos ARCA</h2>
+            </div>
+            <span class="tag-badge">Actualizado 2026 // República Argentina</span>
+          </div>
+          <p class="editorial-p" style="max-width: 780px;">
+            Presentar y abonar en término evita recargos resarcitorios, suspensión de CUIT y la traba de medidas cautelares bancarias.
+          </p>
+
+          <!-- Filter Tabs -->
+          <div class="calendar-filters">
+            <button class="cal-filter-btn active" data-filter="all">Todos los Vencimientos</button>
+            <button class="cal-filter-btn" data-filter="iva">IVA (Mensual)</button>
+            <button class="cal-filter-btn" data-filter="monotributo">Monotributo</button>
+            <button class="cal-filter-btn" data-filter="iibb">Ingresos Brutos</button>
+            <button class="cal-filter-btn" data-filter="sociedades">Sociedades & Balances</button>
+          </div>
+        </div>
+
+        <!-- Table Container (Desktop Only) -->
+        <div class="calendar-table-wrapper desktop-only">
+          <table class="calendar-table">
+            <thead>
+              <tr>
+                <th>Impuesto / Obligación</th>
+                <th>CUIT / Terminación</th>
+                <th>Período</th>
+                <th>Fecha Límite</th>
+                <th>Estado</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- IVA Rows -->
+              <tr class="calendar-row" data-cat="iva">
+                <td><strong>IVA & Libro IVA Digital</strong><br/><span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">Responsables Inscriptos</span></td>
+                <td><span class="mono">CUIT 0 y 1</span></td>
+                <td>Mensual Corriente</td>
+                <td><span class="mono" style="font-weight: 600;">19 del Mes</span></td>
+                <td><span class="status-tag is-urgent">Prioridad Alta</span></td>
+                <td><a href="#contact" class="mono" style="font-size: 0.72rem; color: var(--sand--pop);">Regularizar →</a></td>
+              </tr>
+              <tr class="calendar-row" data-cat="iva">
+                <td><strong>IVA & Libro IVA Digital</strong><br/><span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">Responsables Inscriptos</span></td>
+                <td><span class="mono">CUIT 2 y 3</span></td>
+                <td>Mensual Corriente</td>
+                <td><span class="mono" style="font-weight: 600;">20 del Mes</span></td>
+                <td><span class="status-tag is-urgent">Prioridad Alta</span></td>
+                <td><a href="#contact" class="mono" style="font-size: 0.72rem; color: var(--sand--pop);">Regularizar →</a></td>
+              </tr>
+              <tr class="calendar-row" data-cat="iva">
+                <td><strong>IVA & Libro IVA Digital</strong><br/><span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">Responsables Inscriptos</span></td>
+                <td><span class="mono">CUIT 4 y 5</span></td>
+                <td>Mensual Corriente</td>
+                <td><span class="mono" style="font-weight: 600;">21 del Mes</span></td>
+                <td><span class="status-tag is-urgent">Prioridad Alta</span></td>
+                <td><a href="#contact" class="mono" style="font-size: 0.72rem; color: var(--sand--pop);">Regularizar →</a></td>
+              </tr>
+              <tr class="calendar-row" data-cat="iva">
+                <td><strong>IVA & Libro IVA Digital</strong><br/><span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">Responsables Inscriptos</span></td>
+                <td><span class="mono">CUIT 6 y 7</span></td>
+                <td>Mensual Corriente</td>
+                <td><span class="mono" style="font-weight: 600;">22 del Mes</span></td>
+                <td><span class="status-tag is-active">Vigente</span></td>
+                <td><a href="#contact" class="mono" style="font-size: 0.72rem; color: var(--sand--pop);">Regularizar →</a></td>
+              </tr>
+              <tr class="calendar-row" data-cat="iva">
+                <td><strong>IVA & Libro IVA Digital</strong><br/><span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">Responsables Inscriptos</span></td>
+                <td><span class="mono">CUIT 8 y 9</span></td>
+                <td>Mensual Corriente</td>
+                <td><span class="mono" style="font-weight: 600;">25 del Mes</span></td>
+                <td><span class="status-tag is-active">Vigente</span></td>
+                <td><a href="#contact" class="mono" style="font-size: 0.72rem; color: var(--sand--pop);">Regularizar →</a></td>
+              </tr>
+
+              <!-- Monotributo Rows -->
+              <tr class="calendar-row" data-cat="monotributo">
+                <td><strong>Pago Mensual Monotributo</strong><br/><span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">Todas las Categorías (A hasta K)</span></td>
+                <td><span class="mono">Todas las terminaciones</span></td>
+                <td>Mes en Curso</td>
+                <td><span class="mono" style="font-weight: 600;">Día 20 del Mes</span></td>
+                <td><span class="status-tag is-active">Fijo Mensual</span></td>
+                <td><a href="#contact" class="mono" style="font-size: 0.72rem; color: var(--sand--pop);">Consultar →</a></td>
+              </tr>
+              <tr class="calendar-row" data-cat="monotributo">
+                <td><strong>Recategorización Semestral</strong><br/><span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">Ajuste obligatorio de escalas ARCA</span></td>
+                <td><span class="mono">Todos los monotributistas</span></td>
+                <td>Semestre Enero / Julio</td>
+                <td><span class="mono" style="font-weight: 600;">22 Ene / 22 Jul</span></td>
+                <td><span class="status-tag is-urgent">Crítico</span></td>
+                <td><a href="#contact" class="mono" style="font-size: 0.72rem; color: var(--sand--pop);">Recategorizar →</a></td>
+              </tr>
+
+              <!-- IIBB Rows -->
+              <tr class="calendar-row" data-cat="iibb">
+                <td><strong>Ingresos Brutos ARBA & AGIP</strong><br/><span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">Régimen General y Convenio Multilateral</span></td>
+                <td><span class="mono">Según dígito verificador</span></td>
+                <td>Mes Vencido</td>
+                <td><span class="mono" style="font-weight: 600;">Del 15 al 20 del Mes</span></td>
+                <td><span class="status-tag is-active">Vigente</span></td>
+                <td><a href="#contact" class="mono" style="font-size: 0.72rem; color: var(--sand--pop);">Liquidar →</a></td>
+              </tr>
+
+              <!-- Sociedades Rows -->
+              <tr class="calendar-row" data-cat="sociedades">
+                <td><strong>DDJJ Ganancias Sociedades</strong><br/><span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">Cierre de Ejercicio Comercial</span></td>
+                <td><span class="mono">Sociedades Anónimas, SRL, SAS</span></td>
+                <td>Anual (5to mes post-cierre)</td>
+                <td><span class="mono" style="font-weight: 600;">Día 13 al 15</span></td>
+                <td><span class="status-tag is-urgent">Auditoría Previa</span></td>
+                <td><a href="#contact" class="mono" style="font-size: 0.72rem; color: var(--sand--pop);">Cierre Fiscal →</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Mobile Event Card Feed (Optimized exclusively for smartphones) -->
+        <div class="calendar-mobile-feed mobile-only">
+          
+          <!-- Card 1: IVA 0 y 1 -->
+          <div class="calendar-mobile-card" data-cat="iva">
+            <div class="cal-card-top">
+              <span class="cal-card-cat mono">IVA · AFIP / ARCA</span>
+              <span class="status-tag is-urgent">Prioridad Alta</span>
+            </div>
+            <h4 class="cal-card-title">IVA &amp; Libro IVA Digital</h4>
+            <p class="cal-card-subtitle mono">Responsables Inscriptos</p>
+            <div class="cal-card-meta-grid">
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">TERMINACIÓN</span>
+                <span class="cal-meta-val mono">CUIT 0 y 1</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">VENCE</span>
+                <span class="cal-meta-val cal-highlight mono">19 del Mes</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">PERÍODO</span>
+                <span class="cal-meta-val mono">Mensual</span>
+              </div>
+            </div>
+            <div class="cal-card-bottom">
+              <a href="#contact" class="cal-card-action-btn">
+                <span>Regularizar con Ivo</span>
+                <span class="action-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: IVA 2 y 3 -->
+          <div class="calendar-mobile-card" data-cat="iva">
+            <div class="cal-card-top">
+              <span class="cal-card-cat mono">IVA · AFIP / ARCA</span>
+              <span class="status-tag is-urgent">Prioridad Alta</span>
+            </div>
+            <h4 class="cal-card-title">IVA &amp; Libro IVA Digital</h4>
+            <p class="cal-card-subtitle mono">Responsables Inscriptos</p>
+            <div class="cal-card-meta-grid">
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">TERMINACIÓN</span>
+                <span class="cal-meta-val mono">CUIT 2 y 3</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">VENCE</span>
+                <span class="cal-meta-val cal-highlight mono">20 del Mes</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">PERÍODO</span>
+                <span class="cal-meta-val mono">Mensual</span>
+              </div>
+            </div>
+            <div class="cal-card-bottom">
+              <a href="#contact" class="cal-card-action-btn">
+                <span>Regularizar con Ivo</span>
+                <span class="action-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: IVA 4 y 5 -->
+          <div class="calendar-mobile-card" data-cat="iva">
+            <div class="cal-card-top">
+              <span class="cal-card-cat mono">IVA · AFIP / ARCA</span>
+              <span class="status-tag is-urgent">Prioridad Alta</span>
+            </div>
+            <h4 class="cal-card-title">IVA &amp; Libro IVA Digital</h4>
+            <p class="cal-card-subtitle mono">Responsables Inscriptos</p>
+            <div class="cal-card-meta-grid">
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">TERMINACIÓN</span>
+                <span class="cal-meta-val mono">CUIT 4 y 5</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">VENCE</span>
+                <span class="cal-meta-val cal-highlight mono">21 del Mes</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">PERÍODO</span>
+                <span class="cal-meta-val mono">Mensual</span>
+              </div>
+            </div>
+            <div class="cal-card-bottom">
+              <a href="#contact" class="cal-card-action-btn">
+                <span>Regularizar con Ivo</span>
+                <span class="action-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: IVA 6 y 7 -->
+          <div class="calendar-mobile-card" data-cat="iva">
+            <div class="cal-card-top">
+              <span class="cal-card-cat mono">IVA · AFIP / ARCA</span>
+              <span class="status-tag is-active">Vigente</span>
+            </div>
+            <h4 class="cal-card-title">IVA &amp; Libro IVA Digital</h4>
+            <p class="cal-card-subtitle mono">Responsables Inscriptos</p>
+            <div class="cal-card-meta-grid">
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">TERMINACIÓN</span>
+                <span class="cal-meta-val mono">CUIT 6 y 7</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">VENCE</span>
+                <span class="cal-meta-val mono">22 del Mes</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">PERÍODO</span>
+                <span class="cal-meta-val mono">Mensual</span>
+              </div>
+            </div>
+            <div class="cal-card-bottom">
+              <a href="#contact" class="cal-card-action-btn">
+                <span>Regularizar con Ivo</span>
+                <span class="action-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5: IVA 8 y 9 -->
+          <div class="calendar-mobile-card" data-cat="iva">
+            <div class="cal-card-top">
+              <span class="cal-card-cat mono">IVA · AFIP / ARCA</span>
+              <span class="status-tag is-active">Vigente</span>
+            </div>
+            <h4 class="cal-card-title">IVA &amp; Libro IVA Digital</h4>
+            <p class="cal-card-subtitle mono">Responsables Inscriptos</p>
+            <div class="cal-card-meta-grid">
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">TERMINACIÓN</span>
+                <span class="cal-meta-val mono">CUIT 8 y 9</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">VENCE</span>
+                <span class="cal-meta-val mono">25 del Mes</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">PERÍODO</span>
+                <span class="cal-meta-val mono">Mensual</span>
+              </div>
+            </div>
+            <div class="cal-card-bottom">
+              <a href="#contact" class="cal-card-action-btn">
+                <span>Regularizar con Ivo</span>
+                <span class="action-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 6: Monotributo Pago Mensual -->
+          <div class="calendar-mobile-card" data-cat="monotributo">
+            <div class="cal-card-top">
+              <span class="cal-card-cat mono">MONOTRIBUTO · ARCA</span>
+              <span class="status-tag is-active">Fijo Mensual</span>
+            </div>
+            <h4 class="cal-card-title">Pago Mensual Monotributo</h4>
+            <p class="cal-card-subtitle mono">Categorías A hasta K</p>
+            <div class="cal-card-meta-grid">
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">TERMINACIÓN</span>
+                <span class="cal-meta-val mono">Todas</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">VENCE</span>
+                <span class="cal-meta-val cal-highlight mono">Día 20 del Mes</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">PERÍODO</span>
+                <span class="cal-meta-val mono">Mes en Curso</span>
+              </div>
+            </div>
+            <div class="cal-card-bottom">
+              <a href="#contact" class="cal-card-action-btn">
+                <span>Consultar con Ivo</span>
+                <span class="action-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 7: Monotributo Recategorización -->
+          <div class="calendar-mobile-card" data-cat="monotributo">
+            <div class="cal-card-top">
+              <span class="cal-card-cat mono">MONOTRIBUTO · ARCA</span>
+              <span class="status-tag is-urgent">Crítico</span>
+            </div>
+            <h4 class="cal-card-title">Recategorización Semestral</h4>
+            <p class="cal-card-subtitle mono">Ajuste obligatorio de escalas</p>
+            <div class="cal-card-meta-grid">
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">ALCANCE</span>
+                <span class="cal-meta-val mono">Todos</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">VENCE</span>
+                <span class="cal-meta-val cal-highlight mono">22 Ene / 22 Jul</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">PERÍODO</span>
+                <span class="cal-meta-val mono">Semestral</span>
+              </div>
+            </div>
+            <div class="cal-card-bottom">
+              <a href="#contact" class="cal-card-action-btn">
+                <span>Recategorizar con Ivo</span>
+                <span class="action-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 8: IIBB ARBA / AGIP -->
+          <div class="calendar-mobile-card" data-cat="iibb">
+            <div class="cal-card-top">
+              <span class="cal-card-cat mono">INGRESOS BRUTOS</span>
+              <span class="status-tag is-active">Vigente</span>
+            </div>
+            <h4 class="cal-card-title">Ingresos Brutos ARBA &amp; AGIP</h4>
+            <p class="cal-card-subtitle mono">Régimen General y Convenio Multilateral</p>
+            <div class="cal-card-meta-grid">
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">TERMINACIÓN</span>
+                <span class="cal-meta-val mono">Dígito CUIT</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">VENCE</span>
+                <span class="cal-meta-val cal-highlight mono">15 al 20 del Mes</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">PERÍODO</span>
+                <span class="cal-meta-val mono">Mes Vencido</span>
+              </div>
+            </div>
+            <div class="cal-card-bottom">
+              <a href="#contact" class="cal-card-action-btn">
+                <span>Liquidar con Ivo</span>
+                <span class="action-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 9: Sociedades Ganancias -->
+          <div class="calendar-mobile-card" data-cat="sociedades">
+            <div class="cal-card-top">
+              <span class="cal-card-cat mono">SOCIEDADES · ARCA</span>
+              <span class="status-tag is-urgent">Auditoría Previa</span>
+            </div>
+            <h4 class="cal-card-title">DDJJ Ganancias Sociedades</h4>
+            <p class="cal-card-subtitle mono">Cierre de Ejercicio (SA, SRL, SAS)</p>
+            <div class="cal-card-meta-grid">
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">SOCIEDADES</span>
+                <span class="cal-meta-val mono">SA / SRL / SAS</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">VENCE</span>
+                <span class="cal-meta-val cal-highlight mono">Día 13 al 15</span>
+              </div>
+              <div class="cal-meta-item">
+                <span class="cal-meta-label mono">PERÍODO</span>
+                <span class="cal-meta-val mono">Anual</span>
+              </div>
+            </div>
+            <div class="cal-card-bottom">
+              <a href="#contact" class="cal-card-action-btn">
+                <span>Cierre Fiscal con Ivo</span>
+                <span class="action-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE TAX DIAGNOSTIC CALCULATOR (OTC TOOL STYLE)
+         ========================================================================== -->
+    <section class="diagnostic-section" id="diagnostic">
+      <div class="container-firm">
+        
+        <!-- Desktop Simulator Card (Desktop Only) -->
+        <div class="diagnostic-card desktop-only">
+          
+          <div class="diagnostic-info">
+            <div>
+              <span class="kicker">Herramienta de Consulta</span>
+              <h2 class="section-title" style="margin-top: 0.8rem;">Simulador de Perfil Impositivo</h2>
+              <p class="editorial-p" style="margin-top: 1rem; font-size: 1.05rem;">
+                Respondé 2 preguntas clave para obtener un encuadre preliminar de tu situación fiscal en Argentina y recibir asesoramiento directo vía WhatsApp.
+              </p>
+            </div>
+
+            <div class="diagnostic-result-box">
+              <span class="result-tagline">[ CONSULTA ESTIMADA ]</span>
+              <h4 class="result-main" id="diagResultTitle">Régimen Simplificado (Monotributo)</h4>
+              <p class="result-advice" id="diagResultDesc">
+                Ideal para profesionales y comerciantes con facturación individual. Es clave monitorear topes de facturación, gastos con tarjeta y compatibilidad en caso de relación de dependencia simultánea para evitar exclusiones de oficio de ARCA.
+              </p>
+              <a id="diagWhatsappBtn" href="https://wa.me/?text=Hola%20Ivo,%20quiero%20hacer%20una%20consulta%20contable" target="_blank" rel="noopener" class="btn btn-pop" style="margin-top: 0.8rem; width: 100%;">
+                <span>Enviar este Caso a Ivo por WhatsApp</span>
+                <span class="btn-icon-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="diagnostic-form-wrapper">
+            <form id="taxDiagnosticForm" onsubmit="event.preventDefault();">
+              
+              <!-- Step 1: Perfil de actividad -->
+              <div class="form-step-group">
+                <label class="form-step-label">
+                  <span>1. ¿Cuál es tu situación laboral o societaria actual?</span>
+                  <span class="step-num">PASO 01</span>
+                </label>
+                <div class="radio-pills-grid">
+                  <label class="radio-pill">
+                    <input type="radio" name="profile" value="monotributo" checked />
+                    <span class="radio-pill-box">Monotributista Único</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="profile" value="dependencia_plus" />
+                    <span class="radio-pill-box">En Blanco + Monotributo</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="profile" value="inscripto" />
+                    <span class="radio-pill-box">Responsable Inscripto</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="profile" value="sociedad" />
+                    <span class="radio-pill-box">PyME / SRL / SAS / SA</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="profile" value="exportador" />
+                    <span class="radio-pill-box">Exportador Servicios / USD</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Step 2: Objetivo o Urgencia -->
+              <div class="form-step-group" style="margin-top: 1.5rem;">
+                <label class="form-step-label">
+                  <span>2. ¿Cuál es tu prioridad o necesidad inmediata?</span>
+                  <span class="step-num">PASO 02</span>
+                </label>
+                <div class="radio-pills-grid">
+                  <label class="radio-pill">
+                    <input type="radio" name="goal" value="alta" checked />
+                    <span class="radio-pill-box">Inscripción / Alta Inicial</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="goal" value="regularizar" />
+                    <span class="radio-pill-box">Poner al Día Deudas / Multas</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="goal" value="recategorizar" />
+                    <span class="radio-pill-box">Recategorización Semestral</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="goal" value="abono_mensual" />
+                    <span class="radio-pill-box">Abono Mensual Integral</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="goal" value="balances" />
+                    <span class="radio-pill-box">Balances / Estados Contables</span>
+                  </label>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Mobile Dedicated Simulator Experience (Mobile Only) -->
+        <div class="diagnostic-mobile-card mobile-only">
+          <div class="diag-mobile-header">
+            <span class="kicker">Herramienta de Consulta</span>
+            <h2 class="section-title" style="margin-top: 0.5rem; font-size: 1.7rem;">Simulador Fiscal</h2>
+            <p class="editorial-p" style="margin-top: 0.6rem; font-size: 0.92rem; line-height: 1.5;">
+              Seleccioná tu situación y prioridad para ver tu diagnóstico y consultarle directo a Ivo por WhatsApp.
+            </p>
+          </div>
+
+          <form id="taxDiagnosticFormMobile" class="diag-mobile-form" onsubmit="event.preventDefault();">
+            <!-- Paso 1 -->
+            <div class="diag-mobile-step">
+              <div class="diag-step-header">
+                <span class="step-num-pill mono">PASO 01</span>
+                <span class="diag-step-title">Situación actual:</span>
+              </div>
+              
+              <div class="diag-options-stack">
+                <label class="diag-opt-card">
+                  <input type="radio" name="profile_m" value="monotributo" checked />
+                  <div class="opt-card-inner">
+                    <span class="opt-radio-circle"></span>
+                    <div class="opt-text">
+                      <span class="opt-title">Monotributista Único</span>
+                      <span class="opt-desc">Profesional o comerciante independiente</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="diag-opt-card">
+                  <input type="radio" name="profile_m" value="dependencia_plus" />
+                  <div class="opt-card-inner">
+                    <span class="opt-radio-circle"></span>
+                    <div class="opt-text">
+                      <span class="opt-title">En Blanco + Monotributo</span>
+                      <span class="opt-desc">Relación de dependencia con actividad extra</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="diag-opt-card">
+                  <input type="radio" name="profile_m" value="inscripto" />
+                  <div class="opt-card-inner">
+                    <span class="opt-radio-circle"></span>
+                    <div class="opt-text">
+                      <span class="opt-title">Responsable Inscripto</span>
+                      <span class="opt-desc">Régimen General (IVA, Ganancias, Autónomos)</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="diag-opt-card">
+                  <input type="radio" name="profile_m" value="sociedad" />
+                  <div class="opt-card-inner">
+                    <span class="opt-radio-circle"></span>
+                    <div class="opt-text">
+                      <span class="opt-title">PyME / SRL / SAS / SA</span>
+                      <span class="opt-desc">Sociedad con balances y directorio</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="diag-opt-card">
+                  <input type="radio" name="profile_m" value="exportador" />
+                  <div class="opt-card-inner">
+                    <span class="opt-radio-circle"></span>
+                    <div class="opt-text">
+                      <span class="opt-title">Exportador Servicios / USD</span>
+                      <span class="opt-desc">Cobros en el exterior, tech, diseño, LLC</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="diag-mobile-step">
+              <div class="diag-step-header">
+                <span class="step-num-pill mono">PASO 02</span>
+                <span class="diag-step-title">Prioridad o necesidad inmediata:</span>
+              </div>
+
+              <div class="diag-options-stack">
+                <label class="diag-opt-card">
+                  <input type="radio" name="goal_m" value="alta" checked />
+                  <div class="opt-card-inner">
+                    <span class="opt-radio-circle"></span>
+                    <div class="opt-text">
+                      <span class="opt-title">Inscripción / Alta Inicial</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="diag-opt-card">
+                  <input type="radio" name="goal_m" value="regularizar" />
+                  <div class="opt-card-inner">
+                    <span class="opt-radio-circle"></span>
+                    <div class="opt-text">
+                      <span class="opt-title">Poner al Día Deudas / Multas</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="diag-opt-card">
+                  <input type="radio" name="goal_m" value="recategorizar" />
+                  <div class="opt-card-inner">
+                    <span class="opt-radio-circle"></span>
+                    <div class="opt-text">
+                      <span class="opt-title">Recategorización Semestral</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="diag-opt-card">
+                  <input type="radio" name="goal_m" value="abono_mensual" />
+                  <div class="opt-card-inner">
+                    <span class="opt-radio-circle"></span>
+                    <div class="opt-text">
+                      <span class="opt-title">Abono Mensual Integral</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="diag-opt-card">
+                  <input type="radio" name="goal_m" value="balances" />
+                  <div class="opt-card-inner">
+                    <span class="opt-radio-circle"></span>
+                    <div class="opt-text">
+                      <span class="opt-title">Balances / Estados Contables</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Resultado Inmediato (Directamente visible tras Paso 2) -->
+            <div class="diag-mobile-result-box" id="diagMobileResultBox">
+              <div class="result-badge-row">
+                <span class="result-live-indicator"></span>
+                <span class="result-tagline mono">ENCUADRE FISCAL ESTIMADO</span>
+              </div>
+              <h4 class="result-main" id="diagResultTitleMobile">Régimen Simplificado (Monotributo)</h4>
+              <p class="result-advice" id="diagResultDescMobile">
+                Ideal para profesionales y comerciantes con facturación individual. Es clave monitorear topes de facturación, gastos con tarjeta y compatibilidad en caso de relación de dependencia simultánea para evitar exclusiones de oficio de ARCA.
+              </p>
+              <a id="diagWhatsappBtnMobile" href="https://wa.me/?text=Hola%20Ivo,%20quiero%20hacer%20una%20consulta%20contable" target="_blank" rel="noopener" class="btn-whatsapp-direct">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="flex-shrink: 0;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.33 7.34 9 7.42 8.78 7.66C8.56 7.9 7.94 8.48 7.94 9.65C7.94 10.82 8.79 11.95 8.91 12.11C9.03 12.27 10.57 14.65 12.93 15.67C13.49 15.91 13.93 16.05 14.27 16.16C14.83 16.34 15.34 16.31 15.75 16.25C16.2 16.18 17.13 15.69 17.32 15.15C17.52 14.61 17.52 14.15 17.46 14.05C17.4 13.95 17.24 13.89 17 13.77C16.76 13.65 15.58 13.07 15.36 12.99C15.14 12.91 14.98 12.87 14.82 13.11C14.66 13.35 14.2 13.89 14.06 14.05C13.92 14.21 13.78 14.23 13.54 14.11C13.3 13.99 12.53 13.74 11.61 12.92C10.89 12.28 10.4 11.49 10.26 11.25C10.12 11.01 10.25 10.88 10.37 10.76C10.48 10.65 10.61 10.48 10.74 10.33C10.86 10.18 10.9 10.07 10.98 9.91C11.06 9.75 11.02 9.61 10.96 9.49C10.9 9.37 10.44 8.24 10.25 7.78C10.06 7.33 9.87 7.39 9.73 7.38C9.6 7.37 9.44 7.34 9.53 7.34Z"/></svg>
+                <span>Enviar Consulta a Ivo por WhatsApp</span>
+              </a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         LOCATION & GOOGLE MAPS SECTION
+         ========================================================================== -->
+    <section class="location-section" id="location">
+      <div class="container-firm">
+        
+        <div class="location-header">
+          <div>
+            <span class="kicker">Sede & Cobertura</span>
+            <h2 class="section-title" style="margin-top: 0.6rem;">Ubicación & Atención</h2>
+          </div>
+          <span class="tag-badge is-live">CABA & PBA</span>
+        </div>
+
+        <div class="location-grid">
+          
+          <!-- Location Info -->
+          <div class="location-info-card">
+            <div>
+              <span class="mono" style="font-size: 0.72rem; color: var(--sand--pop); display: block; margin-bottom: 0.4rem;">[ SEDE PROFESIONAL ]</span>
+              <h3 style="font-size: 1.35rem; font-weight: 500; color: var(--sand--text);">
+                Estudio contable IVO
+              </h3>
+              <p class="editorial-p" style="font-size: 0.95rem; margin-top: 0.6rem;">
+                Atención presencial en oficinas de CABA (con cita previa coordinada) y asesoramiento tributario integral 100% digital para clientes de todo el país y el exterior.
+              </p>
+            </div>
+
+            <div class="loc-details-list">
+              <div class="loc-item">
+                <span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">[ DOMICILIO PROFESIONAL ]</span>
+                <span style="font-size: 0.92rem; font-weight: 500; color: var(--sand--text);">Estudio contable IVO &middot; CABA, Argentina</span>
+              </div>
+              <div class="loc-item">
+                <span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">[ CONSEJOS PROFESIONALES ]</span>
+                <span style="font-size: 0.92rem; font-weight: 500; color: var(--sand--text);">CPCE CABA &middot; CPCE PBA (Habilitación Activa)</span>
+              </div>
+              <div class="loc-item">
+                <span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">[ HORARIOS DE ATENCIÓN ]</span>
+                <span style="font-size: 0.92rem; font-weight: 500; color: var(--sand--text);">Lunes a Viernes de 9:00 a 18:00 hs (ART)</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+              <a href="https://www.google.com/maps/place/Estudio+contable+IVO/@-34.5519504,-58.4429491,16z/data=!4m8!3m7!1s0x95bcb587f2798ec1:0x2f259e20428d5e9!8m2!3d-34.5519504!4d-58.4429491!9m1!1b1!16s%2Fg%2F11zh3ykhhy!18m1!1e1" target="_blank" rel="noopener" class="btn btn-pop" style="font-size: 0.72rem; padding: 0.75rem 1.2rem;">
+                <span>Ver en Google Maps</span>
+                <span class="btn-icon-arrow">↗</span>
+              </a>
+              <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20coordinar%20una%20reuni%C3%B3n%20presencial%20o%20virtual" target="_blank" rel="noopener" class="btn" style="font-size: 0.72rem; padding: 0.75rem 1.2rem;">
+                <span>Coordinar Cita</span>
+                <span class="btn-icon-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded Interactive Google Map -->
+          <div class="location-map-frame">
+            <iframe 
+              title="Ubicación oficial Estudio contable IVO en Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.082!2d-58.445524!3d-34.5519504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb587f2798ec1%3A0x2f259e20428d5e9!2sEstudio%20contable%20IVO!5e0!3m2!1ses!2sar!4v1727000000000!5m2!1ses!2sar" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         CALL TO ACTION / CONTACTO DIRECTO (OTC BUTTON STRIP)
+         ========================================================================== -->
+    <section class="cta-section" id="contact">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80" alt="Firma contable" class="cta-background-image" loading="lazy" decoding="async" />
+      
+      <div class="container-firm">
+        
+        <div class="cta-header">
+          <div>
+            <span class="kicker" style="color: var(--sand--pop);">Canales Oficiales</span>
+            <h2 class="section-title" style="color: #fff; margin-top: 0.6rem;">Contacto Directo</h2>
+          </div>
+          <span class="tag-badge is-live" style="border-color: rgba(255, 255, 255, 0.15); color: #a8a69e;">Atención Activa</span>
+        </div>
+
+        <div class="cta-direct-container">
+          <div class="cta-buttons-grid">
+            
+            <!-- WhatsApp Direct -->
+            <a href="https://wa.me/?text=Hola%20Ivo,%20te%20escribo%20desde%20tu%20sitio%20web%20para%20solicitar%20asesoramiento%20contable." target="_blank" rel="noopener" class="cta-action-btn btn-whatsapp">
+              <span>Mensaje Directo por WhatsApp</span>
+              <span class="btn-icon-arrow">
+                <svg viewBox="0 0 11 9" fill="none"><path d="M10.37 4.51L5.86 9L5.07 8.19L8.21 5.09H0V3.91H8.21L5.07 0.79L5.86 0L10.37 4.51Z" fill="currentColor"/></svg>
+              </span>
+            </a>
+
+            <!-- Email Direct -->
+            <a href="mailto:consultas@ivocontador.com.ar?subject=Consulta%20Profesional%20Contable" class="cta-action-btn btn-email">
+              <span>Enviar Correo</span>
+              <span class="btn-icon-arrow">
+                <svg viewBox="0 0 11 9" fill="none"><path d="M10.37 4.51L5.86 9L5.07 8.19L8.21 5.09H0V3.91H8.21L5.07 0.79L5.86 0L10.37 4.51Z" fill="currentColor"/></svg>
+              </span>
+            </a>
+
+            <!-- Seguir en Instagram (Derecha) -->
+            <a href="https://www.instagram.com/ivocontador/" target="_blank" rel="noopener" class="cta-action-btn btn-instagram">
+              <span>Seguir en Instagram @ivocontador</span>
+              <span class="btn-icon-arrow">
+                <svg viewBox="0 0 11 9" fill="none"><path d="M10.37 4.51L5.86 9L5.07 8.19L8.21 5.09H0V3.91H8.21L5.07 0.79L5.86 0L10.37 4.51Z" fill="currentColor"/></svg>
+              </span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </div> <!-- /.main-content-flow -->
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER (EDITORIAL MINIMALISM)
+       ========================================================================== -->
+  <footer class="footer-section">
+    <div class="container-firm">
+      
+      <div class="footer-top">
+        
+        <div class="footer-col">
+          <div class="brand-lockup" style="color: #fff;">
+            <img src="assets/logo.png" alt="Logo Ivo Contador" class="brand-logo-img" style="height: 30px;" loading="lazy" decoding="async" />
+            <div class="brand-text">
+              <span class="brand-title" style="color: #fff;">ivocontador</span>
+              <span class="brand-subtitle" style="color: #8e8d88;">ESTUDIO CONTABLE & ASESORÍA FISCAL</span>
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; line-height: 1.6; margin-top: 0.5rem; color: #8e8d88;">
+            Asesoramiento integral y arquitectura contable para emprendedores, profesionales y empresas en la República Argentina y cross-border.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-heading">Navegación</span>
+          <ul class="footer-links">
+            <li><a href="#about" class="footer-link">El Estudio</a></li>
+            <li><a href="#practices" class="footer-link">Prácticas & Servicios</a></li>
+            <li><a href="#calendar" class="footer-link">Calendario Impositivo ARCA</a></li>
+            <li><a href="#diagnostic" class="footer-link">Simulador de Perfil Fiscal</a></li>
+            <li><a href="#location" class="footer-link">Ubicación & Sede</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-heading">Credenciales & Matrícula</span>
+          <p style="font-size: 0.8rem; line-height: 1.6; color: #8e8d88;">
+            <strong>Lic. Luciano Ivo Racciatti</strong><br/>
+            Contador Público Nacional<br/>
+            Matriculado en CPCE CABA (Ciudad Autónoma de Buenos Aires)<br/>
+            Matriculado en CPCE PBA (Provincia de Buenos Aires)<br/>
+            Cumplimiento estricto del Código de Ética Profesional.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">
+          &copy; <span id="currentYear">2026</span> ivocontador. Todos los derechos reservados.
+        </span>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/ivocontador/" target="_blank" rel="noopener" class="footer-link mono">
+            Instagram: @ivocontador ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Volver arriba" title="Subir al inicio">
+    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 13V3M8 3L3.5 7.5M8 3L12.5 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
