@@ -2,7 +2,7 @@
    ivocontador // Service Worker — Ultra-Fast Caching Engine
    ========================================================================== */
 
-const CACHE_NAME = 'ivocontador-cache-v3';
+const CACHE_NAME = 'ivocontador-cache-v4';
 
 const PRECACHE_ASSETS = [
   './',

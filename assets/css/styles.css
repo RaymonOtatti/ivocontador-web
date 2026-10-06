@@ -2,8 +2,52 @@
    ivocontador // ESTUDIO CONTABLE & ASESORÍA FISCAL
    Design System: Inspired by Old Tom Capital (Webflow Editorial Aesthetic)
    Palette: Warm Sandstone (#efede7), Charcoal (#1c1c17), Vermillion Pop (#f34e30), Deep Olive (#2a3220)
-   Typography: Geist Mono (Meta & Data) + Inter (Editorial Grotesk) — Ultra-optimized
+   Typography: SF Pro Display
    ========================================================================== */
+
+/* High-Availability SF Pro Display @font-face */
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('SF Pro Display Regular'),
+       local('SF Pro Display'),
+       local('SF Pro'),
+       url('https://cdn.jsdelivr.net/gh/sahil-khanduri/sf-pro-display-cdn@latest/fonts/SFProDisplay-Regular.woff2') format('woff2'),
+       url('https://fonts.cdnfonts.com/s/14883/SFProDisplay-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local('SF Pro Display Medium'),
+       url('https://cdn.jsdelivr.net/gh/sahil-khanduri/sf-pro-display-cdn@latest/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+       url('https://fonts.cdnfonts.com/s/14883/SFProDisplay-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local('SF Pro Display Semibold'),
+       local('SF Pro Display SemiBold'),
+       url('https://cdn.jsdelivr.net/gh/sahil-khanduri/sf-pro-display-cdn@latest/fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+       url('https://fonts.cdnfonts.com/s/14883/SFProDisplay-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('SF Pro Display Bold'),
+       url('https://cdn.jsdelivr.net/gh/sahil-khanduri/sf-pro-display-cdn@latest/fonts/SFProDisplay-Bold.woff2') format('woff2'),
+       url('https://fonts.cdnfonts.com/s/14883/SFProDisplay-Bold.woff') format('woff');
+}
 
 :root {
   /* Sand Theme (Default) */
