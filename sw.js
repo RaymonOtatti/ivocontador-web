@@ -2,14 +2,14 @@
    ivocontador // Service Worker — Ultra-Fast Caching Engine
    ========================================================================== */
 
-const CACHE_NAME = 'ivocontador-cache-v2';
+const CACHE_NAME = 'ivocontador-cache-v3';
 
 const PRECACHE_ASSETS = [
   './',
   './index.html',
-  './styles.css',
-  './script.js',
-  './assets/logo.png'
+  './assets/css/styles.css',
+  './assets/js/script.js',
+  './assets/images/logo.png'
 ];
 
 // Install: Cache critical core assets

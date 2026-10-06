@@ -13,25 +13,24 @@
   <meta property="og:url" content="https://www.instagram.com/ivocontador/" />
   
   <!-- Resource Hints & DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://fonts.cdnfonts.com" />
   <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <!-- Critical Above-The-Fold Preloads -->
-  <link rel="preload" as="image" href="assets/logo.png" type="image/png" />
-  <link rel="preload" as="style" href="styles.css" />
+  <link rel="preload" as="image" href="assets/images/logo.png" type="image/png" />
+  <link rel="preload" as="style" href="assets/css/styles.css" />
 
-  <!-- Google Fonts: Geist Mono & Inter (Pruned unused fonts for maximum performance) -->
-  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Fonts: SF Pro Display -->
+  <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
   
   <!-- Custom Stylesheet (Old Tom Capital Aesthetic) -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-
-  <!-- Custom Orange Square Cursor -->
-  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
 
   <!-- ==========================================================================
        TOP NAVIGATION BAR
@@ -42,7 +41,7 @@
         
         <!-- Brand Lockup -->
         <a href="#hero" class="brand-lockup" aria-label="Inicio">
-          <img src="assets/logo.png" alt="Logo Ivo Contador" class="brand-logo-img" decoding="async" />
+          <img src="assets/images/logo.png" alt="Logo Ivo Contador" class="brand-logo-img" decoding="async" />
           <div class="brand-text">
             <span class="brand-title">ivocontador</span>
             <span class="brand-subtitle">ESTUDIO CONTABLE &amp; ASESORÍA FISCAL</span>
@@ -82,7 +81,7 @@
   <div class="mobile-drawer" id="mobileDrawer">
     <div class="mobile-drawer-header">
       <div class="brand-lockup">
-        <img src="assets/logo.png" alt="Logo Ivo Contador" class="brand-logo-img" style="height: 28px;" decoding="async" />
+        <img src="assets/images/logo.png" alt="Logo Ivo Contador" class="brand-logo-img" style="height: 28px;" decoding="async" />
         <div class="brand-text">
           <span class="brand-title">ivocontador</span>
           <span class="brand-subtitle">ESTUDIO CONTABLE &amp; ASESORÍA FISCAL</span>
@@ -132,7 +131,7 @@
         <!-- Monumental Full-Width Brand Stage -->
         <div class="index-brand-stage">
           <div class="index-brand-lockup">
-            <img src="assets/logo.png" alt="Logo IVOCONTADOR" class="index-brand-logo" fetchpriority="high" decoding="async" />
+            <img src="assets/images/logo.png" alt="Logo IVOCONTADOR" class="index-brand-logo" fetchpriority="high" decoding="async" />
             <div class="index-brand-text">
               <h1 class="index-brand-title">IVOCONTADOR</h1>
               <p class="index-brand-subtitle">ESTUDIO CONTABLE &amp; ASESORÍA FISCAL</p>
@@ -165,7 +164,6 @@
           <div class="hero-grid">
             
             <div class="hero-left">
-              <span class="kicker">Propuesta de Valor &middot; Arquitectura Contable</span>
               <h2 class="display-title">
                 Asesoramos a emprendedores, profesionales independientes y PyMEs en Argentina.
               </h2>
@@ -178,10 +176,6 @@
                 <span class="btn-icon-arrow">
                   <svg viewBox="0 0 11 9" fill="none"><path d="M10.37 4.51L5.86 9L5.07 8.19L8.21 5.09H0V3.91H8.21L5.07 0.79L5.86 0L10.37 4.51Z" fill="currentColor"/></svg>
                 </span>
-              </a>
-              <a href="https://www.instagram.com/ivocontador/" target="_blank" rel="noopener" class="btn">
-                <span>Ver Instagram @ivocontador</span>
-                <span class="btn-icon-arrow">↗</span>
               </a>
             </div>
           </div>
@@ -205,26 +199,6 @@
             </div>
           </div>
 
-        </div>
-
-        <!-- 4 Metrics Row -->
-        <div class="hero-sub-row">
-          <div class="metric-card">
-            <span class="metric-number">100%</span>
-            <span class="metric-label">Atención Personalizada Sin Intermediarios</span>
-          </div>
-          <div class="metric-card">
-            <span class="metric-number">24h</span>
-            <span class="metric-label">Tiempo Promedio de Respuesta ante Dudas</span>
-          </div>
-          <div class="metric-card">
-            <span class="metric-number">CABA & PBA</span>
-            <span class="metric-label">Matriculación Oficial en Ambos Consejos</span>
-          </div>
-          <div class="metric-card">
-            <span class="metric-number">0 Multas</span>
-            <span class="metric-label">Monitoreo Preventivo de Vencimientos</span>
-          </div>
         </div>
 
       </div>
@@ -331,146 +305,154 @@
           <span class="tag-badge is-live">Disponibilidad Activa</span>
         </div>
 
-        <div class="practices-grid">
-          
-          <!-- Practice 1: Monotributo -->
-          <div class="practice-card">
-            <div class="practice-top">
-              <div class="practice-index">
-                <span>[ 01 // RÉGIMEN SIMPLIFICADO ]</span>
-                <span class="practice-dot"></span>
-              </div>
-              <h3 class="practice-title">Monotributo & Pequeños Contribuyentes</h3>
-              <div class="practice-details">
-                <p class="practice-desc">
-                  Alta y categorización estratégica ante ARCA. Monitoreo permanente de topes de facturación, acreditaciones bancarias y gastos con tarjeta para evitar exclusiones de oficio. Gestión de recategorizaciones semestrales y facturación electrónica.
-                </p>
-                <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Monotributo" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
-                  <span>Consultar este servicio →</span>
-                </a>
-              </div>
-            </div>
-            <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
-              <span class="toggle-label">Saber más</span>
-              <span class="practice-arrow">↓</span>
-            </button>
-          </div>
+        <!-- Mobile Toggle Button (Mobile Only) -->
+        <button type="button" class="section-collapse-btn mobile-only" id="practicesCollapseBtn" aria-expanded="false">
+          <span class="collapse-btn-text">Ver Áreas de Práctica</span>
+          <span class="collapse-btn-icon">↓</span>
+        </button>
 
-          <!-- Practice 2: Empleo formal + Independiente -->
-          <div class="practice-card">
-            <div class="practice-top">
-              <div class="practice-index">
-                <span>[ 02 // COMPATIBILIDAD DUAL ]</span>
-                <span class="practice-dot"></span>
+        <div class="section-collapse-content" id="practicesCollapseContent">
+          <div class="practices-grid">
+            
+            <!-- Practice 1: Monotributo -->
+            <div class="practice-card">
+              <div class="practice-top">
+                <div class="practice-index">
+                  <span>01 // RÉGIMEN SIMPLIFICADO</span>
+                  <span class="practice-dot"></span>
+                </div>
+                <h3 class="practice-title">Monotributo & Pequeños Contribuyentes</h3>
+                <div class="practice-details">
+                  <p class="practice-desc">
+                    Alta y categorización estratégica ante ARCA. Monitoreo permanente de topes de facturación, acreditaciones bancarias y gastos con tarjeta para evitar exclusiones de oficio. Gestión de recategorizaciones semestrales y facturación electrónica.
+                  </p>
+                  <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Monotributo" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
+                    <span>Consultar este servicio →</span>
+                  </a>
+                </div>
               </div>
-              <h3 class="practice-title">Relación de Dependencia + Monotributo</h3>
-              <div class="practice-details">
-                <p class="practice-desc">
-                  Estar en relación de dependencia no te impide tener tu propio emprendimiento. Al tener tus aportes jubilatorios y obra social cubiertos por tu empleo formal, en el Monotributo pagás únicamente el componente impositivo, reduciendo tu costo al mínimo.
-                </p>
-                <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Relaci%C3%B3n%20de%20Dependencia%20y%20Monotributo" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
-                  <span>Consultar este servicio →</span>
-                </a>
-              </div>
+              <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
+                <span class="toggle-label">Saber más</span>
+                <span class="practice-arrow">↓</span>
+              </button>
             </div>
-            <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
-              <span class="toggle-label">Saber más</span>
-              <span class="practice-arrow">↓</span>
-            </button>
-          </div>
 
-          <!-- Practice 3: Responsables Inscriptos -->
-          <div class="practice-card">
-            <div class="practice-top">
-              <div class="practice-index">
-                <span>[ 03 // RÉGIMEN GENERAL ]</span>
-                <span class="practice-dot"></span>
+            <!-- Practice 2: Empleo formal + Independiente -->
+            <div class="practice-card">
+              <div class="practice-top">
+                <div class="practice-index">
+                  <span>02 // COMPATIBILIDAD DUAL</span>
+                  <span class="practice-dot"></span>
+                </div>
+                <h3 class="practice-title">Relación de Dependencia + Monotributo</h3>
+                <div class="practice-details">
+                  <p class="practice-desc">
+                    Estar en relación de dependencia no te impide tener tu propio emprendimiento. Al tener tus aportes jubilatorios y obra social cubiertos por tu empleo formal, en el Monotributo pagás únicamente el componente impositivo, reduciendo tu costo al mínimo.
+                  </p>
+                  <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Relaci%C3%B3n%20de%20Dependencia%20y%20Monotributo" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
+                    <span>Consultar este servicio →</span>
+                  </a>
+                </div>
               </div>
-              <h3 class="practice-title">Responsables Inscriptos & Ganancias</h3>
-              <div class="practice-details">
-                <p class="practice-desc">
-                  Liquidación mensual de IVA, libros de IVA Digital, retenciones y percepciones. Confección de declaraciones juradas anuales de Impuesto a las Ganancias y Bienes Personales. Planificación del cómputo de créditos fiscales y deducciones.
-                </p>
-                <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Responsables%20Inscriptos%20y%20Ganancias" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
-                  <span>Consultar este servicio →</span>
-                </a>
-              </div>
+              <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
+                <span class="toggle-label">Saber más</span>
+                <span class="practice-arrow">↓</span>
+              </button>
             </div>
-            <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
-              <span class="toggle-label">Saber más</span>
-              <span class="practice-arrow">↓</span>
-            </button>
-          </div>
 
-          <!-- Practice 4: Sociedades y PyMEs -->
-          <div class="practice-card">
-            <div class="practice-top">
-              <div class="practice-index">
-                <span>[ 04 // GOBIERNO CORPORATIVO ]</span>
-                <span class="practice-dot"></span>
+            <!-- Practice 3: Responsables Inscriptos -->
+            <div class="practice-card">
+              <div class="practice-top">
+                <div class="practice-index">
+                  <span>03 // RÉGIMEN GENERAL</span>
+                  <span class="practice-dot"></span>
+                </div>
+                <h3 class="practice-title">Responsables Inscriptos & Ganancias</h3>
+                <div class="practice-details">
+                  <p class="practice-desc">
+                    Liquidación mensual de IVA, libros de IVA Digital, retenciones y percepciones. Confección de declaraciones juradas anuales de Impuesto a las Ganancias y Bienes Personales. Planificación del cómputo de créditos fiscales y deducciones.
+                  </p>
+                  <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Responsables%20Inscriptos%20y%20Ganancias" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
+                    <span>Consultar este servicio →</span>
+                  </a>
+                </div>
               </div>
-              <h3 class="practice-title">Sociedades Comerciales & PyMEs</h3>
-              <div class="practice-details">
-                <p class="practice-desc">
-                  Constitución y asesoramiento para SAS, SRL y SA. Confección de Estados Contables anuales, auditoría y certificación ante CPCE CABA y CPCE PBA para bancos y licitaciones. Ajuste por Inflación Impositivo y rúbrica de libros digitales.
-                </p>
-                <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Sociedades%20y%20PyMEs" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
-                  <span>Consultar este servicio →</span>
-                </a>
-              </div>
+              <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
+                <span class="toggle-label">Saber más</span>
+                <span class="practice-arrow">↓</span>
+              </button>
             </div>
-            <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
-              <span class="toggle-label">Saber más</span>
-              <span class="practice-arrow">↓</span>
-            </button>
-          </div>
 
-          <!-- Practice 5: IIBB y Convenio Multilateral -->
-          <div class="practice-card">
-            <div class="practice-top">
-              <div class="practice-index">
-                <span>[ 05 // FISCALIDAD PROVINCIAL ]</span>
-                <span class="practice-dot"></span>
+            <!-- Practice 4: Sociedades y PyMEs -->
+            <div class="practice-card">
+              <div class="practice-top">
+                <div class="practice-index">
+                  <span>04 // GOBIERNO CORPORATIVO</span>
+                  <span class="practice-dot"></span>
+                </div>
+                <h3 class="practice-title">Sociedades Comerciales & PyMEs</h3>
+                <div class="practice-details">
+                  <p class="practice-desc">
+                    Constitución y asesoramiento para SAS, SRL y SA. Confección de Estados Contables anuales, auditoría y certificación ante CPCE CABA y CPCE PBA para bancos y licitaciones. Ajuste por Inflación Impositivo y rúbrica de libros digitales.
+                  </p>
+                  <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Sociedades%20y%20PyMEs" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
+                    <span>Consultar este servicio →</span>
+                  </a>
+                </div>
               </div>
-              <h3 class="practice-title">Ingresos Brutos & Convenio Multilateral</h3>
-              <div class="practice-details">
-                <p class="practice-desc">
-                  Gestión mensual de declaraciones juradas en ARBA (PBA), AGIP (CABA) y SIFERE (Convenio Multilateral). Análisis de coeficientes unificados, atenuación de alícuotas y recuperación de saldos a favor por retenciones bancarias (SIRCREB/SIRTAC).
-                </p>
-                <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Ingresos%20Brutos%20y%20Convenio%20Multilateral" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
-                  <span>Consultar este servicio →</span>
-                </a>
-              </div>
+              <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
+                <span class="toggle-label">Saber más</span>
+                <span class="practice-arrow">↓</span>
+              </button>
             </div>
-            <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
-              <span class="toggle-label">Saber más</span>
-              <span class="practice-arrow">↓</span>
-            </button>
-          </div>
 
-          <!-- Practice 6: Freelancers & Servicios al Exterior -->
-          <div class="practice-card">
-            <div class="practice-top">
-              <div class="practice-index">
-                <span>[ 06 // ECONOMÍA DEL CONOCIMIENTO ]</span>
-                <span class="practice-dot"></span>
+            <!-- Practice 5: IIBB y Convenio Multilateral -->
+            <div class="practice-card">
+              <div class="practice-top">
+                <div class="practice-index">
+                  <span>05 // FISCALIDAD PROVINCIAL</span>
+                  <span class="practice-dot"></span>
+                </div>
+                <h3 class="practice-title">Ingresos Brutos & Convenio Multilateral</h3>
+                <div class="practice-details">
+                  <p class="practice-desc">
+                    Gestión mensual de declaraciones juradas en ARBA (PBA), AGIP (CABA) y SIFERE (Convenio Multilateral). Análisis de coeficientes unificados, atenuación de alícuotas y recuperación de saldos a favor por retenciones bancarias (SIRCREB/SIRTAC).
+                  </p>
+                  <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Ingresos%20Brutos%20y%20Convenio%20Multilateral" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
+                    <span>Consultar este servicio →</span>
+                  </a>
+                </div>
               </div>
-              <h3 class="practice-title">Freelancers Tech & Cobros en USD</h3>
-              <div class="practice-details">
-                <p class="practice-desc">
-                  Encuadre fiscal para exportadores de servicios (software, diseño, marketing, consultoría). Emisión de Factura E de exportación, régimen de disponibilidad de divisas del BCRA, y compatibilidad con cuentas o estructuras internacionales (LLC).
-                </p>
-                <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Exportaci%C3%B3n%20de%20Servicios%20y%20USD" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
-                  <span>Consultar este servicio →</span>
-                </a>
-              </div>
+              <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
+                <span class="toggle-label">Saber más</span>
+                <span class="practice-arrow">↓</span>
+              </button>
             </div>
-            <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
-              <span class="toggle-label">Saber más</span>
-              <span class="practice-arrow">↓</span>
-            </button>
-          </div>
 
+            <!-- Practice 6: Freelancers & Servicios al Exterior -->
+            <div class="practice-card">
+              <div class="practice-top">
+                <div class="practice-index">
+                  <span>06 // ECONOMÍA DEL CONOCIMIENTO</span>
+                  <span class="practice-dot"></span>
+                </div>
+                <h3 class="practice-title">Freelancers Tech & Cobros en USD</h3>
+                <div class="practice-details">
+                  <p class="practice-desc">
+                    Encuadre fiscal para exportadores de servicios (software, diseño, marketing, consultoría). Emisión de Factura E de exportación, régimen de disponibilidad de divisas del BCRA, y compatibilidad con cuentas o estructuras internacionales (LLC).
+                  </p>
+                  <a href="https://wa.me/?text=Hola%20Ivo,%20quiero%20consultar%20por%20Exportaci%C3%B3n%20de%20Servicios%20y%20USD" target="_blank" rel="noopener" class="btn btn-pop" style="padding: 0.45rem 0.9rem; font-size: 0.68rem; margin-top: 0.9rem; width: 100%;">
+                    <span>Consultar este servicio →</span>
+                  </a>
+                </div>
+              </div>
+              <button type="button" class="practice-footer-btn practice-toggle-btn" aria-expanded="false">
+                <span class="toggle-label">Saber más</span>
+                <span class="practice-arrow">↓</span>
+              </button>
+            </div>
+
+          </div>
         </div>
 
       </div>
@@ -493,7 +475,15 @@
           <p class="editorial-p" style="max-width: 780px;">
             Presentar y abonar en término evita recargos resarcitorios, suspensión de CUIT y la traba de medidas cautelares bancarias.
           </p>
+        </div>
 
+        <!-- Mobile Toggle Button (Mobile Only) -->
+        <button type="button" class="section-collapse-btn mobile-only" id="calendarCollapseBtn" aria-expanded="false">
+          <span class="collapse-btn-text">Ver Cronograma de Vencimientos</span>
+          <span class="collapse-btn-icon">↓</span>
+        </button>
+
+        <div class="section-collapse-content" id="calendarCollapseContent">
           <!-- Filter Tabs -->
           <div class="calendar-filters">
             <button class="cal-filter-btn active" data-filter="all">Todos los Vencimientos</button>
@@ -502,7 +492,6 @@
             <button class="cal-filter-btn" data-filter="iibb">Ingresos Brutos</button>
             <button class="cal-filter-btn" data-filter="sociedades">Sociedades & Balances</button>
           </div>
-        </div>
 
         <!-- Table Container (Desktop Only) -->
         <div class="calendar-table-wrapper desktop-only">
@@ -873,7 +862,7 @@
               </a>
             </div>
           </div>
-
+        </div>
         </div>
 
       </div>
@@ -898,7 +887,7 @@
             </div>
 
             <div class="diagnostic-result-box">
-              <span class="result-tagline">[ CONSULTA ESTIMADA ]</span>
+              <span class="result-tagline">CONSULTA ESTIMADA</span>
               <h4 class="result-main" id="diagResultTitle">Régimen Simplificado (Monotributo)</h4>
               <p class="result-advice" id="diagResultDesc">
                 Ideal para profesionales y comerciantes con facturación individual. Es clave monitorear topes de facturación, gastos con tarjeta y compatibilidad en caso de relación de dependencia simultánea para evitar exclusiones de oficio de ARCA.
@@ -988,7 +977,14 @@
             </p>
           </div>
 
-          <form id="taxDiagnosticFormMobile" class="diag-mobile-form" onsubmit="event.preventDefault();">
+          <!-- Mobile Toggle Button (Mobile Only) -->
+          <button type="button" class="section-collapse-btn mobile-only" id="diagnosticCollapseBtn" aria-expanded="false">
+            <span class="collapse-btn-text">Ver Simulador Fiscal</span>
+            <span class="collapse-btn-icon">↓</span>
+          </button>
+
+          <div class="section-collapse-content" id="diagnosticCollapseContent">
+            <form id="taxDiagnosticFormMobile" class="diag-mobile-form" onsubmit="event.preventDefault();">
             <!-- Paso 1 -->
             <div class="diag-mobile-step">
               <div class="diag-step-header">
@@ -1130,6 +1126,7 @@
               </a>
             </div>
           </form>
+          </div>
         </div>
 
       </div>
@@ -1155,7 +1152,7 @@
           <!-- Location Info -->
           <div class="location-info-card">
             <div>
-              <span class="mono" style="font-size: 0.72rem; color: var(--sand--pop); display: block; margin-bottom: 0.4rem;">[ SEDE PROFESIONAL ]</span>
+              <span class="mono" style="font-size: 0.72rem; color: var(--sand--pop); display: block; margin-bottom: 0.4rem;">SEDE PROFESIONAL</span>
               <h3 style="font-size: 1.35rem; font-weight: 500; color: var(--sand--text);">
                 Estudio contable IVO
               </h3>
@@ -1166,15 +1163,15 @@
 
             <div class="loc-details-list">
               <div class="loc-item">
-                <span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">[ DOMICILIO PROFESIONAL ]</span>
+                <span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">DOMICILIO PROFESIONAL</span>
                 <span style="font-size: 0.92rem; font-weight: 500; color: var(--sand--text);">Estudio contable IVO &middot; CABA, Argentina</span>
               </div>
               <div class="loc-item">
-                <span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">[ CONSEJOS PROFESIONALES ]</span>
+                <span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">CONSEJOS PROFESIONALES</span>
                 <span style="font-size: 0.92rem; font-weight: 500; color: var(--sand--text);">CPCE CABA &middot; CPCE PBA (Habilitación Activa)</span>
               </div>
               <div class="loc-item">
-                <span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">[ HORARIOS DE ATENCIÓN ]</span>
+                <span class="mono" style="font-size: 0.7rem; color: var(--sand--demoted);">HORARIOS DE ATENCIÓN</span>
                 <span style="font-size: 0.92rem; font-weight: 500; color: var(--sand--text);">Lunes a Viernes de 9:00 a 18:00 hs (ART)</span>
               </div>
             </div>
@@ -1273,7 +1270,7 @@
         
         <div class="footer-col">
           <div class="brand-lockup" style="color: #fff;">
-            <img src="assets/logo.png" alt="Logo Ivo Contador" class="brand-logo-img" style="height: 30px;" loading="lazy" decoding="async" />
+            <img src="assets/images/logo.png" alt="Logo Ivo Contador" class="brand-logo-img" style="height: 30px;" loading="lazy" decoding="async" />
             <div class="brand-text">
               <span class="brand-title" style="color: #fff;">ivocontador</span>
               <span class="brand-subtitle" style="color: #8e8d88;">ESTUDIO CONTABLE & ASESORÍA FISCAL</span>
@@ -1329,7 +1326,7 @@
   </button>
 
   <!-- Scripts -->
-  <script src="script.js" defer></script>
+  <script src="assets/js/script.js" defer></script>
   <script>
     document.getElementById('currentYear').textContent = new Date().getFullYear();
   </script>
